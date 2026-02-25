@@ -30,8 +30,6 @@ function App() {
           }),
         });
         const result = await res.json();
-        console.log(result.data);
-        console.log(result.fields);
         setData(result.data);
         setLabels(result.fields);
       } catch (error) {
